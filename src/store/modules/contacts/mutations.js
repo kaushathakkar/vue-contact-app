@@ -10,7 +10,7 @@ export default {
     let index = state.allContacts.findIndex(
       (item) => item.key == key
     )
-    state.allContacts[index] = contact.contact
+    state.allContacts[index] = contact
   },
   [types.REMOVE_CONTACT](state, contactId) {
     let index = state.allContacts.findIndex(
